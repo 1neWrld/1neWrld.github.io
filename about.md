@@ -26,7 +26,7 @@ permalink: /about/
     </p>
 
     <h2>What You’ll Find Here</h2>
-    <ul style="color:#666; margin-left:20px; margin-bottom:15px; line-height:1.8;">
+    <ul>
       <li>Coding and programming concepts</li>
       <li>My journey learning programming languages and frameworks</li>
       <li>Sketches, drawings, and art practice</li>
