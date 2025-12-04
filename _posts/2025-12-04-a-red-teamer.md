@@ -1,0 +1,18 @@
+---
+layout: post
+title: "A Red Teamer"
+date: 2025-12-04
+author: Wandipa Marema
+---
+
+# A Red Teamer
+
+A little tedious backstory, I recently graduated(Unemployed for about a year now :)) with a Bachelors in Computer and Information Sciences. I had my mind set on becoming a game developer. I even developed my own little game out of school, I made a bit of games but there's a subtle difference in terms of feeling when it comes to school projects and personal projects. A corny little game called "Quack Mayhem". A turn-based grid strategy game, where you play as these little ducks with weapons XD. The accomplishment felt good, but short lived. As I had a feeling I'm certain tons of people who pursue a tertiary education get... Regret.
+
+I didn't wanna become a game developer anymore. I don't know how this feeling intensified so swiftly. Maybe because of my constant failure of finding work. My resume wasn't good enough, even though I didn't have the drive or passion to make more games. I would've thought that getting a secure job would be more than enough to lift up my socks and make more games. 
+
+On top of that the linear path now reached it's end point, as what I thought was so clear was now muffled and now a myriad of roads are amongst me to choose from and the pressure is immense. Pressure of making my own money, starting a life, making something of this life. There's more to think about when you grow up.   
+ 
+Stumbled across this name a few days ago "Red Teamer". Intrigued by the phrase I did my research and this opened up a plethora of fascination. When I was younger, despite their oversimplified portrayal, I was always in awe with how hackers in movies were operated. The ability to access heavily secure systems. The fascination was always on the wrong things too XD, but never the less the intrigue was immense. Now this is where the coincidence comes in. TryHackMe was having a black friday sale, a yearly subscription to all there resources to learn cybersecurity. Some people will think of this as a minor coincidence others more religious, an act of God. I personally choose the latter, and best believe I pounced on that deal. It emptied my wallet but what else was I gonna do with it...
+
+So now I have a personal blog website I've built using python flask, full access to cyber security resources for a whole year, and since I'm unemployed, a shit ton of time! XD. Best believe I'm not gonna waste it (Cringing).  A red teamer sounds pretty cool too! 
