@@ -1,32 +1,175 @@
----
-layout: default
-title: About
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Lines of Progress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<section class="about">
-    <div class="container">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #f0f0f0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #666;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        /* About Content */
+        .content-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .content-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .content-card p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #999;
+            font-size: 13px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">MyLinesofProgress</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/post/new">Blog</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>About Me</h1>
+        <p>Welcome to my personal space on the internet — a place where I share my journey, ideas, hobbies, programming, and continuous learning.</p>
+    </section>
 
-        <p>Hi there! I'm Wandipa Marema, a passionate learner documenting my journey in software development and cybersecurity.</p>
+    <!-- About Content -->
+    <div class="content-container">
+        <div class="content-card">
+            <h2>Who Am I?</h2>
+            <p>
+                My name is Wandipa Marema, and this blog — My Lines of Progress — is my digital journal.
+                It's where I track and display my growth in programming, personal hobbies, problem-solving, and life.
+            </p>
 
-        <h2>What I Write About</h2>
-        <p>On this blog, you'll find posts about my learning experiences, projects, challenges, and progress in the tech world.</p>
+            <p>
+                Through major setbacks I've decided to become one who learns by documenting. Writing posts, breaking down concepts,
+                and sharing insights helps me understand things better. This blog exists, so I
+                can look back and see how far I've come, and for you to see who your getting to know.
+            </p>
 
-        <h2>My Interests</h2>
-        <div class="interests">
-            <span class="interest-tag">Drawing</span>
-            <span class="interest-tag">Exercise</span>
-            <span class="interest-tag">Journaling</span>
-            <span class="interest-tag">Coding</span>
+            <h2>What You’ll Find Here</h2>
+            <p>
+                I write about:
+            </p>
+            <ul style="color:#666; margin-left:20px; margin-bottom:15px; line-height:1.8;">
+                <li>Coding and programming concepts</li>
+                <li>My journey learning program languages, and frameworks</li>
+                <li>Sketches, drawings, and art practice</li>
+                <li>Random thoughts, insights, and life lessons</li>
+                <li>Any progress I make — big or small</li>
+            </ul>
+
+            <h2>Why “Line of Progress”?</h2>
+            <p>
+                The goal is simple: express things in a clean, direct, and honest way.
+                No noise. No overcomplication. Just clarity — whether it’s code, art, or thoughts.
+            </p>
+
+            <p>
+                Thanks for stopping by. I hope you find something here that inspires you,
+                helps you learn, or just makes you think.
+            </p>
         </div>
-
-        <h2>Get In Touch</h2>
-        <div class="contact-links">
-            <a href="mailto:{{ site.email }}">📧 Email</a>
-            <a href="https://github.com/{{ site.github_username }}" target="_blank">💻 GitHub</a>
-            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">💼 LinkedIn</a>
-        </div>
-
-        <a href="{{ '/' | relative_url }}" class="btn-back">← Back to Home</a>
     </div>
-</section>
+
+
+</body>
+</html>
