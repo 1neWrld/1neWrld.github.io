@@ -1,175 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Lines of Progress</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+---
+layout: default
+title: About
+permalink: /about/
+---
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
-        }
+<section class="hero">
+  <div class="container">
+    <h1>About Me</h1>
+    <p>Welcome to my personal space on the internet — a place where I share my journey, ideas, hobbies, programming, and continuous learning.</p>
+  </div>
+</section>
 
-        /* Header Navigation */
-        header {
-            background-color: #f0f0f0;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #ddd;
-        }
+<div class="content-container">
+  <div class="content-card">
+    <h2>Who Am I?</h2>
+    <p>
+      My name is Wandipa Marema, and this blog — My Lines of Progress — is my digital journal.
+      It's where I track and display my growth in programming, personal hobbies, problem-solving, and life.
+    </p>
 
-        .logo {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            text-decoration: none;
-        }
+    <p>
+      Through major setbacks I've decided to become one who learns by documenting. Writing posts, breaking down concepts,
+      and sharing insights helps me understand things better. This blog exists, so I
+      can look back and see how far I've come, and for you to see who you're getting to know.
+    </p>
 
-        nav a {
-            color: #666;
-            text-decoration: none;
-            margin-left: 30px;
-            font-size: 14px;
-        }
+    <h2>What You’ll Find Here</h2>
+    <p>I write about:</p>
+    <ul style="color:#666; margin-left:20px; margin-bottom:15px; line-height:1.8;">
+      <li>Coding and programming concepts</li>
+      <li>My journey learning programming languages and frameworks</li>
+      <li>Sketches, drawings, and art practice</li>
+      <li>Random thoughts, insights, and life lessons</li>
+      <li>Any progress I make — big or small</li>
+    </ul>
 
-        nav a:hover {
-            color: #333;
-        }
+    <h2>Why “Line of Progress”?</h2>
+    <p>
+      The goal is simple: express things in a clean, direct, and honest way.
+      No noise. No overcomplication. Just clarity — whether it’s code, art, or thoughts.
+    </p>
 
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .hero p {
-            font-size: 16px;
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto 20px;
-        }
-
-        /* About Content */
-        .content-container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .content-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .content-card h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        .content-card p {
-            color: #666;
-            margin-bottom: 15px;
-            font-size: 15px;
-            line-height: 1.7;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #999;
-            font-size: 13px;
-            background-color: #f0f0f0;
-            border-top: 1px solid #ddd;
-            margin-top: 60px;
-        }
-
-        footer a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <a href="/" class="logo">MyLinesofProgress</a>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/post/new">Blog</a>
-            <a href="/about">About</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>About Me</h1>
-        <p>Welcome to my personal space on the internet — a place where I share my journey, ideas, hobbies, programming, and continuous learning.</p>
-    </section>
-
-    <!-- About Content -->
-    <div class="content-container">
-        <div class="content-card">
-            <h2>Who Am I?</h2>
-            <p>
-                My name is Wandipa Marema, and this blog — My Lines of Progress — is my digital journal.
-                It's where I track and display my growth in programming, personal hobbies, problem-solving, and life.
-            </p>
-
-            <p>
-                Through major setbacks I've decided to become one who learns by documenting. Writing posts, breaking down concepts,
-                and sharing insights helps me understand things better. This blog exists, so I
-                can look back and see how far I've come, and for you to see who your getting to know.
-            </p>
-
-            <h2>What You’ll Find Here</h2>
-            <p>
-                I write about:
-            </p>
-            <ul style="color:#666; margin-left:20px; margin-bottom:15px; line-height:1.8;">
-                <li>Coding and programming concepts</li>
-                <li>My journey learning program languages, and frameworks</li>
-                <li>Sketches, drawings, and art practice</li>
-                <li>Random thoughts, insights, and life lessons</li>
-                <li>Any progress I make — big or small</li>
-            </ul>
-
-            <h2>Why “Line of Progress”?</h2>
-            <p>
-                The goal is simple: express things in a clean, direct, and honest way.
-                No noise. No overcomplication. Just clarity — whether it’s code, art, or thoughts.
-            </p>
-
-            <p>
-                Thanks for stopping by. I hope you find something here that inspires you,
-                helps you learn, or just makes you think.
-            </p>
-        </div>
-    </div>
-
-
-</body>
-</html>
+    <p>
+      Thanks for stopping by. I hope you find something here that inspires you,
+      helps you learn, or just makes you think.
+    </p>
+  </div>
+</div>
