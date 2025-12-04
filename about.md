@@ -13,21 +13,21 @@ permalink: /about/
 
 <div class="content-container">
   <div class="content-card">
-    <h2 style="color: #000; font-weight: bold;">Who Am I?</h2>
+    
+    <h2 class="about-subheading">Who Am I?</h2>
     <p>
       My name is Wandipa Marema, and this blog — My Lines of Progress — is my digital journal.
       It's where I track and display my growth in programming, personal hobbies, problem-solving, and life.
     </p>
-
     <p>
       Through major setbacks I've decided to become one who learns by documenting. Writing posts, breaking down concepts,
       and sharing insights helps me understand things better. This blog exists, so I
       can look back and see how far I've come, and for you to see who you're getting to know.
     </p>
 
-    <h2 style="color: #000; font-weight: bold;">What You’ll Find Here</h2>
+    <h2 class="about-subheading">What You’ll Find Here</h2>
     <p>I write about:</p>
-    <ul style="color:#666; margin-left:20px; margin-bottom:15px; line-height:1.8;">
+    <ul>
       <li>Coding and programming concepts</li>
       <li>My journey learning programming languages and frameworks</li>
       <li>Sketches, drawings, and art practice</li>
@@ -35,15 +35,15 @@ permalink: /about/
       <li>Any progress I make — big or small</li>
     </ul>
 
-    <h2 style="color: #000; font-weight: bold;">Why “Line of Progress”?</h2>
+    <h2 class="about-subheading">Why “Line of Progress”?</h2>
     <p>
       The goal is simple: express things in a clean, direct, and honest way.
       No noise. No overcomplication. Just clarity — whether it’s code, art, or thoughts.
     </p>
-
     <p>
       Thanks for stopping by. I hope you find something here that inspires you,
       helps you learn, or just makes you think.
     </p>
+
   </div>
 </div>
