@@ -1,0 +1,20 @@
+title: My Lines of Progress
+description: Documenting my journey in software development and cybersecurity
+author: Wandipa Marema
+email: wandipamarema@icloud.com
+url: "https://1neWrld.github.io"
+baseurl: ""
+
+# Social links
+github_username: 1neWrld
+linkedin_username: wandipa-marema-b2771a308
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
