@@ -5,8 +5,6 @@ date: 2025-12-04
 author: Wandipa Marema
 ---
 
-# A Red Teamer
-
 A little tedious backstory, I recently graduated(Unemployed for about a year now :)) with a Bachelors in Computer and Information Sciences. I had my mind set on becoming a game developer. I even developed my own little game out of school, I made a bit of games but there's a subtle difference in terms of feeling when it comes to school projects and personal projects. A corny little game called "Quack Mayhem". A turn-based grid strategy game, where you play as these little ducks with weapons XD. The accomplishment felt good, but short lived. As I had a feeling I'm certain tons of people who pursue a tertiary education get... Regret.
 
 I didn't wanna become a game developer anymore. I don't know how this feeling intensified so swiftly. Maybe because of my constant failure of finding work. My resume wasn't good enough, even though I didn't have the drive or passion to make more games. I would've thought that getting a secure job would be more than enough to lift up my socks and make more games. 
