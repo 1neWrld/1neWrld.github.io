@@ -20,5 +20,5 @@ this will broadcast my prgoress! How much I've learnt, struggled with, and perse
 rather than make excuses" I resonated with this passage, as I've constantly had motivation to learn a new skill, start a new hobby only to neglect it when the motivation dies out. With this, I won't allow the cycle to continue! I now really have
 to cultivate my discipline to ensure I always return to shore, rather than constantly get lost in sea never to return.  
 
-So I'm not logging onto TryHackMe today. I'm doing putting my attention to other hobbies such as drawing. I'm learning perspective. I don't know if I can call this a hobbie to, but I'll include it. I'm not letting the
+So I'm not logging onto TryHackMe today. My attention is on other hobbies, such as drawing. I'm learning perspective. I don't know if I can call this a hobbie too, but I'll include it XD. I'm not letting the
 stupid streak define my progress! These will! 
