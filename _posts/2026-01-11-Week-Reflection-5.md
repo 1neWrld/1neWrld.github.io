@@ -1,6 +1,6 @@
 ---
 layout: post
-  title: "Week Reflection 5"
+title: "Week Reflection 5"
 date: 2026-01-11
 author: Wandipa Marema
 ---
