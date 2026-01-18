@@ -23,7 +23,7 @@ Though I do try to incorporate the so called "Gone with the old, in with the new
 worth value isn't easily attainable, as the journey is where the bits of value are attained, so some could see these challenges as worth it, good. Yet these challenges are the very sole reason I give up, despite my
 desire for it.
 
-This seems like a question that can't be easily solved, which usually evinces within me, the usual sense of doubt. "Can I do this", "I don't think this is for me". Though I wish this was something easily resolved XD!
+This seems like a question that can't be easily solved, which usually evinces a of doubt. "Can I do this", "I don't think this is for me". Though I wish this was something easily resolved XD!
 Trial and error will have to suffice. 
 
 Though that doesn't mean I won't be intentional with my trials and tribulations! This deliberate approach will allow me to see what works, and what doesn't. What I like, and what I don't like. When I revert back 
