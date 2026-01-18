@@ -29,4 +29,4 @@ Trial and error will have to suffice.
 Though that doesn't mean I won't be intentional with my trials and tribulations! This deliberate approach will allow me to see what works, and what doesn't. What I like, and what I don't like. When I revert back 
 to old habits.This will allow me to decipher my errors and try again. When I have the urge to scroll on tiktok, I'll draw, or I'll revise what I've recently learnt regarding cyber security. 
 
-This is a journey! To grow, and overcome. 
+This is a journey! To grow, and overcome. To grow, and overcome. And I'll document it here! The wins, the setbacks, the patterns I notice. Not for perfection, but for progress.
