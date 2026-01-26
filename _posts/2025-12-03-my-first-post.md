@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to My Lines of Progress"
-date: 2025-12-04
+date: 2025-12-03
 author: Wandipa Marema
 ---
 
