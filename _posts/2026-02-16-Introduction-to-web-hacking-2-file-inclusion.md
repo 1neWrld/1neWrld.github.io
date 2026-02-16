@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Web-Hacking #2 File Inclusion
+title: Introduction to Web-Hacking 2 File Inclusion
 date: 2026-02-16
 author: Wandipa Marema
 --- 
