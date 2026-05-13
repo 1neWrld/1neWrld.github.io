@@ -1,0 +1,57 @@
+---
+layout: default
+title: Books & Learning Paths
+---
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="page-hero-icon">📚</div>
+            <h1>Books & Learning Paths</h1>
+            <p>The resources shaping how I think — books I've read, courses I'm working through, and notes on what's actually sticking.</p>
+        </div>
+    </div>
+</section>
+
+<section class="posts">
+    <div class="container">
+        {% assign knowledge_posts = site.posts | where: "category", "knowledge" %}
+        {% if knowledge_posts.size > 0 %}
+            {% for post in knowledge_posts %}
+            <article class="post-card knowledge-card">
+                <div class="post-card-meta-row">
+                    {% if post.resource_type == "book" %}
+                    <span class="post-category post-category--book">📖 Book</span>
+                    {% elsif post.resource_type == "course" %}
+                    <span class="post-category post-category--course">🎓 Course</span>
+                    {% else %}
+                    <span class="post-category post-category--knowledge">Learning</span>
+                    {% endif %}
+                    {% if post.status %}
+                    <span class="status-badge status-badge--{{ post.status | downcase | replace: ' ', '-' }}">{{ post.status }}</span>
+                    {% endif %}
+                    <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+                </div>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                {% if post.author %}
+                <p class="resource-author">by {{ post.author }}</p>
+                {% endif %}
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+                <a href="{{ post.url | relative_url }}" class="read-more">Read notes →</a>
+            </article>
+            {% endfor %}
+        {% else %}
+            <!-- Show the Linux book entry as a placeholder until the post is published -->
+            <article class="post-card knowledge-card featured-resource">
+                <div class="post-card-meta-row">
+                    <span class="post-category post-category--book">📖 Book</span>
+                    <span class="status-badge status-badge--completed">Completed</span>
+                </div>
+                <h2>The Linux Command Line — William Shotts</h2>
+                <p class="resource-author">My first deep dive into Linux fundamentals</p>
+                <p class="post-excerpt">Post coming soon — covering what I learned about navigating the shell, file permissions, processes, scripting, and everything that changed how I think about the OS layer.</p>
+                <span class="read-more coming-soon">Post coming soon</span>
+            </article>
+        {% endif %}
+    </div>
+</section>
