@@ -1,0 +1,45 @@
+---
+layout: default
+title: Writeups
+---
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="page-hero-icon">🖥️</div>
+            <h1>Writeups</h1>
+            <p>Virtual machine walkthroughs, CTF breakdowns, and step-by-step technical write-ups from the labs I've worked through.</p>
+        </div>
+    </div>
+</section>
+
+<section class="posts">
+    <div class="container">
+        {% assign writeup_posts = site.posts | where: "category", "writeup" %}
+        {% if writeup_posts.size > 0 %}
+            {% for post in writeup_posts %}
+            <article class="post-card writeup-card">
+                <div class="post-card-meta-row">
+                    <span class="post-category post-category--writeup">Writeup</span>
+                    {% if post.difficulty %}
+                    <span class="difficulty-badge difficulty-badge--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>
+                    {% endif %}
+                    <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+                </div>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                {% if post.platform %}
+                <p class="writeup-platform">Platform: <strong>{{ post.platform }}</strong></p>
+                {% endif %}
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+                <a href="{{ post.url | relative_url }}" class="read-more">Read breakdown →</a>
+            </article>
+            {% endfor %}
+        {% else %}
+            <article class="post-card empty-state">
+                <div class="empty-state-icon">🖥️</div>
+                <h2>First writeup on the way</h2>
+                <p class="post-excerpt">VM walkthroughs and CTF breakdowns will live here. To add one, create a post in <code>_posts/</code> with <code>category: writeup</code> in the front matter. You can also add <code>platform: TryHackMe</code> and <code>difficulty: Easy</code> fields.</p>
+            </article>
+        {% endif %}
+    </div>
+</section>
