@@ -67,9 +67,7 @@ layout: default
     <div class="container">
         <h2 class="section-heading">Latest Posts</h2>
 
-        {% assign latest_posts = site.posts
-            | where_exp: "post", "post.category == 'Reflections' or post.category == 'Writeups'"
-            | slice: 0, 3 %}
+        {% assign latest_posts = site.posts | slice: 0, 3 %}
 
         {% if latest_posts.size > 0 %}
             {% for post in latest_posts %}
