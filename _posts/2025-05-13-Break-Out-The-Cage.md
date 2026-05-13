@@ -243,6 +243,7 @@ chmod +x /tmp/pspy64s
 ```
 Now on the previous VM I completed, I had issues granting executing permissions to the pspy payload, due to my remote system not having write permissions. To bypass this issue — /tmp is world-writable, therefore downloading the payload to the /tmp directory completely disregards such uneccesary headache.     
 
+![Executing the pspy64s Payload](/assets/images/writeups/break-out-the-cage/PSPY64S.png)
 
 Viewing the processes, you'll come across
 ```
