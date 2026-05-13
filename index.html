@@ -66,8 +66,13 @@ layout: default
 <section class="posts">
     <div class="container">
         <h2 class="section-heading">Latest Posts</h2>
-        {% if site.posts.size > 0 %}
-            {% for post in site.posts %}
+
+        {% assign latest_posts = site.posts
+            | where_exp: "post", "post.category == 'Reflections' or post.category == 'Writeups'"
+            | slice: 0, 3 %}
+
+        {% if latest_posts.size > 0 %}
+            {% for post in latest_posts %}
             <article class="post-card">
                 {% if post.category %}
                 <span class="post-category post-category--{{ post.category | downcase }}">{{ post.category }}</span>
