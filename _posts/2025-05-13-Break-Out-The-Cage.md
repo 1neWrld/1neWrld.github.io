@@ -178,7 +178,7 @@ This is a classic steganography technique — data encoded visually into the fre
 
 With the key `namelesstwo`, decrypted the ciphertext from the FTP file using [dcode.fr/vigenere-cipher](https://www.dcode.fr/vigenere-cipher).
 
-![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher#1.png)
+![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher-1.png)
 
 * Acquire the data needed, utilising the decoded `dad_tasks` file and `namelesstwo` into the vigerener-cipher *
 
@@ -336,7 +336,7 @@ haiinspsyanileph
 
 The email heavily hinted at the key — the word **"face"** was emphasised repeatedly.
 
-![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher#2.png)
+![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher-2.png)
 
 * Decrypted `haiinspsyanileph` using Vigenère with key `face` → revealed root's password *
 
