@@ -145,12 +145,13 @@ ftp> bye
 
 Retrieved a file containing base64 encoded text. Decoded it:
 
-
 ```bash
 base64 -d dad_tasks.txt > dad_tasks_decoded
 ```
 
 The output was Vigenère ciphertext — not yet readable without a key.
+
+![Deciphered text of dad_tasks file](/assets/images/writeups/break-out-the-cage/Decoded.png)
 
 ---
 
