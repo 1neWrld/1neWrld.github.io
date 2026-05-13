@@ -582,5 +582,28 @@ footer .social-links a:hover {
     border-left: 4px solid #007bff;
 }
 
+/* Writeup images — constrained and centered */
+.post-content img {
+    display: block;
+    max-width: 100%;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Image captions — the italic lines under images */
+.post-content img + em,
+.post-content p > em {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
 /* Update nav in _layouts/default.html to include new links */
 /* (see note below) */
