@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TryHackMe — Break-Out-The-Cage [Writeup]"
+title: "TryHackMe — Break-Out-The-Cage"
 date: 2026-05-13
 category: writeup
 platform: TryHackMe
