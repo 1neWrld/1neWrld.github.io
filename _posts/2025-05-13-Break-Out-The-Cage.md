@@ -233,4 +233,4 @@ cat /var/mail/root
 
 ---
 
-*Room completed on TryHackMe. Write-up by [your name] — [date]*
+*Room completed on TryHackMe. Write-up by [Wandipa Marema] — [2026-05-13]*
