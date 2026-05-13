@@ -164,7 +164,9 @@ wget http://<TARGET_IP>/auditions/must_practice_corrupt_file.mp3
 
 Opened it in Audacity and switched the track to **Spectrogram view** (click the track dropdown → Spectrogram). Zoomed into the high frequency range (~2000–8000 Hz) to reveal text hidden in the audio frequencies:
 
-**Key found: `lessonTwo`**
+![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Audacity.png)
+
+**Key found: `namelesstwo`**
 
 This is a classic steganography technique — data encoded visually into the frequency spectrum of an audio file, invisible to the human ear but visible as shapes when rendered as a spectrogram.
 
@@ -172,7 +174,7 @@ This is a classic steganography technique — data encoded visually into the fre
 
 ## 4. Vigenère Decryption — Round 1
 
-With the key `lessonTwo`, decrypted the ciphertext from the FTP file using [dcode.fr/vigenere-cipher](https://www.dcode.fr/vigenere-cipher).
+With the key `namelesstwo`, decrypted the ciphertext from the FTP file using [dcode.fr/vigenere-cipher](https://www.dcode.fr/vigenere-cipher).
 
 This revealed the deciphered data, where westons password resides.
 
