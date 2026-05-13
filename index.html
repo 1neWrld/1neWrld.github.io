@@ -36,11 +36,42 @@ layout: default
     </div>
 </section>
 
+<!-- Section Navigation -->
+<section class="section-nav">
+    <div class="container">
+        <div class="section-nav-grid">
+            <a href="/reflections" class="section-nav-card">
+                <div class="section-nav-icon">📓</div>
+                <h3>Week Reflections</h3>
+                <p>Weekly check-ins on progress, mindset, and lessons learned along the way.</p>
+                <span class="section-nav-link">View reflections →</span>
+            </a>
+            <a href="/writeups" class="section-nav-card">
+                <div class="section-nav-icon">🖥️</div>
+                <h3>Writeups</h3>
+                <p>Virtual machine walkthroughs, CTF breakdowns, and technical deep-dives.</p>
+                <span class="section-nav-link">View writeups →</span>
+            </a>
+            <a href="/knowledge" class="section-nav-card">
+                <div class="section-nav-icon">📚</div>
+                <h3>Books & Learning Paths</h3>
+                <p>Notes and takeaways from the books and courses shaping my skillset.</p>
+                <span class="section-nav-link">View knowledge →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Posts -->
 <section class="posts">
     <div class="container">
+        <h2 class="section-heading">Latest Posts</h2>
         {% if site.posts.size > 0 %}
             {% for post in site.posts %}
             <article class="post-card">
+                {% if post.category %}
+                <span class="post-category post-category--{{ post.category | downcase }}">{{ post.category }}</span>
+                {% endif %}
                 <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                 <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
                 <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
