@@ -1,0 +1,39 @@
+---
+layout: default
+title: Week Reflections
+---
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="page-hero-icon">📓</div>
+            <h1>Week Reflections</h1>
+            <p>Honest check-ins on the week — what I built, what I struggled with, and what I'm carrying into the next one.</p>
+        </div>
+    </div>
+</section>
+
+<section class="posts">
+    <div class="container">
+        {% assign reflection_posts = site.posts | where: "category", "reflection" %}
+        {% if reflection_posts.size > 0 %}
+            {% for post in reflection_posts %}
+            <article class="post-card">
+                <div class="post-card-meta-row">
+                    <span class="post-category post-category--reflection">Week Reflection</span>
+                    <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+                </div>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+                <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+            </article>
+            {% endfor %}
+        {% else %}
+            <article class="post-card empty-state">
+                <div class="empty-state-icon">📓</div>
+                <h2>First reflection coming soon</h2>
+                <p class="post-excerpt">Week reflections will appear here. To add one, create a post in <code>_posts/</code> with <code>category: reflection</code> in the front matter.</p>
+            </article>
+        {% endif %}
+    </div>
+</section>
