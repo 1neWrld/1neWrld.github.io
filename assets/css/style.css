@@ -354,3 +354,233 @@ footer .social-links a:hover {
     padding-left: 0;
     list-style-type: disc;
 }
+
+/* =============================================
+   ADD THESE STYLES TO THE BOTTOM OF style.css
+   ============================================= */
+
+/* Section Navigation Cards (index.html) */
+.section-nav {
+    padding: 40px 20px 20px;
+    background-color: #f0f0f0;
+}
+
+.section-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.section-nav-card {
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 25px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s, transform 0.2s;
+    border-top: 3px solid transparent;
+}
+
+.section-nav-card:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.13);
+    transform: translateY(-3px);
+    border-top-color: #007bff;
+}
+
+.section-nav-icon {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.section-nav-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.section-nav-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.section-nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Section heading for Latest Posts */
+.section-heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+/* Page Hero (for reflections/writeups/knowledge pages) */
+.page-hero {
+    background-color: #000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.page-hero-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-hero-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.page-hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.page-hero p {
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+/* Post category labels */
+.post-category {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.post-category--reflection {
+    background-color: #e8f4fd;
+    color: #0077cc;
+}
+
+.post-category--writeup {
+    background-color: #e6faf0;
+    color: #1a7a4a;
+}
+
+.post-category--book {
+    background-color: #fff4e0;
+    color: #b36000;
+}
+
+.post-category--course {
+    background-color: #f0eaff;
+    color: #6632cc;
+}
+
+.post-category--knowledge {
+    background-color: #f5f5f5;
+    color: #555;
+}
+
+/* Meta row inside post cards */
+.post-card-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.post-card-meta-row .post-meta {
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+/* Difficulty badge (writeups) */
+.difficulty-badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.difficulty-badge--easy   { background-color: #d4edda; color: #155724; }
+.difficulty-badge--medium { background-color: #fff3cd; color: #856404; }
+.difficulty-badge--hard   { background-color: #f8d7da; color: #721c24; }
+
+/* Status badge (knowledge) */
+.status-badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.status-badge--completed    { background-color: #d4edda; color: #155724; }
+.status-badge--in-progress  { background-color: #fff3cd; color: #856404; }
+.status-badge--up-next      { background-color: #e2e3e5; color: #383d41; }
+
+/* Platform and author lines */
+.writeup-platform,
+.resource-author {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.writeup-platform strong,
+.resource-author {
+    color: #555;
+}
+
+/* Empty state cards */
+.empty-state {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.empty-state-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.empty-state h2 {
+    color: #555;
+}
+
+.empty-state code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+}
+
+/* Coming soon state */
+.coming-soon {
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+    cursor: default;
+}
+
+/* Featured resource card */
+.featured-resource {
+    border-left: 4px solid #007bff;
+}
+
+/* Update nav in _layouts/default.html to include new links */
+/* (see note below) */
