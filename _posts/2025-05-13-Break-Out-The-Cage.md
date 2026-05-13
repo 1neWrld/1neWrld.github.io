@@ -1,9 +1,18 @@
-# TryHackMe — Cage [Writeup]
-
-**Platform:** TryHackMe  
-**Difficulty:** Medium  
-**Tags:** FTP, Steganography, Cryptography, Python, Cron Abuse  
-
+---
+layout: post
+title: "TryHackMe — Break-Out-The-Cage [Writeup]"
+date: 2026-05-13
+category: writeup
+platform: TryHackMe
+difficulty: Medium
+tags:
+  - FTP
+  - Steganography
+  - Cryptography
+  - Python
+  - Cron Abuse
+  - Privilege Escalation
+excerpt: "A Nicolas Cage themed room involving anonymous FTP, audio steganography, Vigenère decryption, and cron job abuse."
 ---
 
 ## Overview
