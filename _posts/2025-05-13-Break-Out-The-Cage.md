@@ -153,7 +153,8 @@ The output was Vigenère ciphertext — not yet readable without a key.
 
 ![Deciphered text of dad_tasks file](/assets/images/writeups/break-out-the-cage/Decoded.png)
 
-*The deciphered data from the dad_taks file*
+  *The deciphered data from the dad_tasks file*
+
 ---
 
 ## 3. Audio Steganography — Finding the Key
@@ -168,7 +169,7 @@ Opened it in Audacity and switched the track to **Spectrogram view** (click the 
 
 ![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Audacity.png)
 
-* The key `namelesstwo` becomes visible in Audacity's spectrogram view *
+  *The key `namelesstwo` becomes visible in Audacity's spectrogram view*
 
 This is a classic steganography technique — data encoded visually into the frequency spectrum of an audio file, invisible to the human ear but visible as shapes when rendered as a spectrogram.
 
@@ -180,7 +181,7 @@ With the key `namelesstwo`, decrypted the ciphertext from the FTP file using [dc
 
 ![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher-1.png)
 
-* Acquire the data needed, utilising the decoded `dad_tasks` file and `namelesstwo` into the vigerener-cipher *
+  *Acquire the data needed, utilising the decoded `dad_tasks` file and `namelesstwo` into the vigerener-cipher*
 
 This revealed the deciphered data, where westons password resides.
 
@@ -251,7 +252,7 @@ Now on the previous VM I completed, I had issues granting executing permissions 
 
 ![Executing the pspy64s Payload](/assets/images/writeups/break-out-the-cage/PSPY64S.png)
 
-* Now we can inspect the running processes without root privileges *
+  *Now we can inspect the running processes without root privileges*
   
 Viewing the processes, you'll come across
 ```
@@ -338,7 +339,7 @@ The email heavily hinted at the key — the word **"face"** was emphasised repea
 
 ![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher-2.png)
 
-* Decrypted `haiinspsyanileph` using Vigenère with key `face` → revealed root's password *
+  *Decrypted `haiinspsyanileph` using Vigenère with key `face` → revealed root's password*
 
 
 
