@@ -2,6 +2,7 @@
 layout: post
 title: "Week Reflection 3"
 date: 2025-12-28
+category: reflection
 author: Wandipa Marema
 ---
 
