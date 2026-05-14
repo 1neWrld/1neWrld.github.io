@@ -383,4 +383,5 @@ cat /root/email_backup/email_2
 
 ---
 
+
 *Room completed on TryHackMe. Write-up by [Wandipa Marema] — [2026-05-13]*
