@@ -153,7 +153,7 @@ The output was Vigenère ciphertext — not yet readable without a key.
 
 ![Deciphered text of dad_tasks file](/assets/images/writeups/break-out-the-cage/Decoded.png)
 
-  *The deciphered data from the dad_tasks file*
+  *Feeding the decoded dad_tasks ciphertext and key namelesstwo into dcode.fr*
 
 ---
 
@@ -179,7 +179,7 @@ This is a classic steganography technique — data encoded visually into the fre
 
 With the key `namelesstwo`, decrypted the ciphertext from the FTP file using [dcode.fr/vigenere-cipher](https://www.dcode.fr/vigenere-cipher).
 
-![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher-1.png)
+![Vigerener Cipher Website](/assets/images/writeups/break-out-the-cage/Cipher-1.png)
 
   *Acquire the data needed, utilising the decoded `dad_tasks` file and `namelesstwo` into the vigerener-cipher*
 
@@ -234,7 +234,7 @@ id
 ```
 
 
-Refering back to the book "Linux Basics for Hackers by OccupyTheWeb". The group leader is always associated with the '1000' uid — Examining the output of id, we discover weston is a member of the `cage` group.  
+Referring back to the book "Linux Basics for Hackers by OccupyTheWeb". The group leader is always associated with the '1000' uid — Examining the output of id, we discover weston is a member of the `cage` group.  
 
 Now utilising the pspy64s payload will allow us to monitor running processes without root privileges. It lets you spy on what commands other users (including root) are executing.
 
@@ -337,7 +337,7 @@ haiinspsyanileph
 
 The email heavily hinted at the key — the word **"face"** was emphasised repeatedly.
 
-![Spectrogram showing the key](/assets/images/writeups/break-out-the-cage/Cipher-2.png)
+![Vigerener Cipher Website](/assets/images/writeups/break-out-the-cage/Cipher-2.png)
 
   *Decrypted `haiinspsyanileph` using Vigenère with key `face` → revealed root's password*
 
