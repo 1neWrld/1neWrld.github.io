@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Web-hacking 3 - Race Conditions
 date: 2026-02-27
+category: knowledge
 author: Wandipa Marema
 ---
 
