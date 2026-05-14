@@ -2,6 +2,7 @@
 layout: post
 title: "Active Recall"
 date: 2025-12-17
+category: reflection
 author: Wandipa Marema
 ---
 
