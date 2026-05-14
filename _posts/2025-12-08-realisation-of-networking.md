@@ -2,6 +2,7 @@
 layout: post
 title: "Realisation of Networking"
 date: 2025-12-08
+category: knowledge
 author: Wandipa Marema
 ---
 
