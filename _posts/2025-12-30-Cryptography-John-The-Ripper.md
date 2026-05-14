@@ -2,6 +2,7 @@
 layout: post
 title: "Cryptography-John-The-Ripper"
 date: 2025-12-29
+category: knowledge
 author: Wandipa Marema
 ---
 
