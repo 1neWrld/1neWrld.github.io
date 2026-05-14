@@ -13,8 +13,10 @@
             <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
             <nav>
                 <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/reflections' | relative_url }}">Reflections</a>
+                <a href="{{ '/writeups' | relative_url }}">Writeups</a>
+                <a href="{{ '/knowledge' | relative_url }}">Books & Learning</a>
                 <a href="{{ '/about/' | relative_url }}">About</a>
-
             </nav>
         </div>
     </header>
@@ -31,9 +33,49 @@
             <div class="social-links">
                 <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
-                <a href="mailto:{{ site.email }}">Email</a>
+                <a href="mailto:{{ site.email }}" onclick="copyEmail(event)">Email</a>
             </div>
         </div>
     </footer>
+
+    <!-- Email copy toast -->
+    <div id="email-toast">📋 Email copied to clipboard!</div>
+
+    <style>
+        #email-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        #email-toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+
+    <script>
+        function copyEmail(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText('{{ site.email }}').then(function() {
+                var toast = document.getElementById('email-toast');
+                toast.classList.add('show');
+                setTimeout(function() {
+                    toast.classList.remove('show');
+                }, 2500);
+            });
+        }
+    </script>
+
 </body>
 </html>
