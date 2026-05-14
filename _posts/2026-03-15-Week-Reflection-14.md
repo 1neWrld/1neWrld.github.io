@@ -2,6 +2,7 @@
 layout: post
 title: Week Reflection 14
 date: 2026-03-15
+category: reflection
 author: Wandipa Marema
 ---
 
