@@ -2,6 +2,7 @@
 layout: post
 title: "Week Reflection 4"
 date: 2026-01-04
+category: reflection
 author: Wandipa Marema
 ---
 
