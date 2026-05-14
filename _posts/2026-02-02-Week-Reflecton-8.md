@@ -2,6 +2,7 @@
 layout: post
 title: Week Reflection 8
 date: 2026-02-02
+category: reflection
 author: Wandipa Marema
 ---
 
