@@ -2,6 +2,7 @@
 layout: post
 title: "Command Line"
 date: 2025-12-05
+category: knowledge
 author: Wandipa Marema
 ---
 
