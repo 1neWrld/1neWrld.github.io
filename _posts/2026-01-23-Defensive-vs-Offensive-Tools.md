@@ -2,6 +2,7 @@
 layout: post
 title: "Defensive vs Offensive Tools"
 date: 2026-01-23
+category: knowledge
 author: Wandipa Marema
 ---
 
