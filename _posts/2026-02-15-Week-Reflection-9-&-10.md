@@ -2,7 +2,6 @@
 layout: post
 title: Week Reflection 9 & 10 
 date: 2026-02-15
-category: reflection
 author: Wandipa Marema
 --- 
 
