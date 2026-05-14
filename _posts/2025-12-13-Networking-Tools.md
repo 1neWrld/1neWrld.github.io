@@ -2,6 +2,7 @@
 layout: post
 title: "Networking Tools"
 date: 2025-12-13
+category: knowledge
 author: Wandipa Marema
 ---
 
