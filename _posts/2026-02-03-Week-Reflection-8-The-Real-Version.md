@@ -2,6 +2,7 @@
 layout: post
 title: Week Reflection 8 The Real Version
 date: 2026-02-03
+category: reflection
 author: Wandipa Marema
 ---
 
