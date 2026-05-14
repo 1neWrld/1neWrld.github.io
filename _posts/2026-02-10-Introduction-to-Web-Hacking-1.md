@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Web-Hacking #1
 date: 2026-02-10
+category: knowledge
 author: Wandipa Marema
 ---
 
