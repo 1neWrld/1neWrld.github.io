@@ -6,8 +6,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #1a1a1a;
+    color: #d4d4d4;
     line-height: 1.6;
 }
 
@@ -21,7 +21,7 @@ body {
 header {
     background-color: #000;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #2e2e2e;
 }
 
 header .container {
@@ -33,7 +33,7 @@ header .container {
 .logo {
     font-size: 18px;
     font-weight: bold;
-    color: #fff; /* changed to white for contrast on black header */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -57,18 +57,19 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f0f0f0;
+    background-color: #1a1a1a;
 }
 
 .hero h1 {
     font-size: 36px;
     margin-bottom: 15px;
     font-weight: 600;
+    color: #f0f0f0;
 }
 
 .hero p {
     font-size: 16px;
-    color: #666;
+    color: #888;
     max-width: 600px;
     margin: 0 auto 30px;
 }
@@ -82,7 +83,7 @@ nav a:hover {
 }
 
 .social-links a {
-    color: #333;
+    color: #aaa;
     transition: color 0.3s, transform 0.2s;
 }
 
@@ -102,8 +103,8 @@ nav a:hover {
 }
 
 .category-tag {
-    background-color: #ddd;
-    color: #666;
+    background-color: #2e2e2e;
+    color: #aaa;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 14px;
@@ -115,16 +116,16 @@ nav a:hover {
 }
 
 .post-card {
-    background-color: white;
+    background-color: #242424;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     transition: box-shadow 0.3s;
 }
 
 .post-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .post-card h2 {
@@ -133,7 +134,7 @@ nav a:hover {
 }
 
 .post-card h2 a {
-    color: #333;
+    color: #e0e0e0;
     text-decoration: none;
 }
 
@@ -142,13 +143,13 @@ nav a:hover {
 }
 
 .post-meta {
-    color: #999;
+    color: #777;
     font-size: 13px;
     margin-bottom: 15px;
 }
 
 .post-excerpt {
-    color: #666;
+    color: #aaa;
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 15px;
@@ -171,24 +172,26 @@ nav a:hover {
 }
 
 .post-header {
-    background-color: white;
+    background-color: #242424;
     padding: 40px;
     border-radius: 8px 8px 0 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .post-header h1 {
     font-size: 36px;
     margin-bottom: 15px;
     font-weight: 600;
+    color: #f0f0f0;
 }
 
 .post-content {
-    background-color: white;
+    background-color: #242424;
     padding: 40px;
     border-radius: 0 0 8px 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     margin-bottom: 20px;
+    color: #d4d4d4;
 }
 
 .post-content p {
@@ -202,18 +205,21 @@ nav a:hover {
 }
 
 .post-content code {
-    background-color: #f5f5f5;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
     padding: 2px 6px;
     border-radius: 3px;
     font-family: 'Courier New', monospace;
 }
 
 .post-content pre {
-    background-color: #f5f5f5;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
     margin-bottom: 20px;
+    border: 1px solid #2e2e2e;
 }
 
 .post-footer {
@@ -223,15 +229,15 @@ nav a:hover {
 .btn-back {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6c757d;
-    color: white;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
 }
 
 .btn-back:hover {
-    background-color: #5a6268;
+    background-color: #4a4a4a;
 }
 
 /* About Page */
@@ -240,10 +246,10 @@ nav a:hover {
 }
 
 .about .container {
-    background-color: white;
+    background-color: #242424;
     padding: 50px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .about h1 {
@@ -251,6 +257,7 @@ nav a:hover {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 3px solid #007bff;
+    color: #f0f0f0;
 }
 
 .about h2 {
@@ -258,6 +265,10 @@ nav a:hover {
     color: #007bff;
     margin-top: 35px;
     margin-bottom: 15px;
+}
+
+.about p {
+    color: #d4d4d4;
 }
 
 .interests {
@@ -295,10 +306,10 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 30px 20px;
-    color: #999;
+    color: #666;
     font-size: 13px;
-    background-color: #f0f0f0;
-    border-top: 1px solid #ddd;
+    background-color: #1a1a1a;
+    border-top: 1px solid #2e2e2e;
     margin-top: 60px;
 }
 
@@ -307,13 +318,13 @@ footer .social-links {
 }
 
 footer .social-links a {
-    color: #666;
+    color: #555;
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer .social-links a:hover {
-    color: #333;
+    color: #aaa;
 }
 
 /* Center content card */
@@ -324,45 +335,38 @@ footer .social-links a:hover {
 }
 
 .content-card {
-    background-color: white;
+    background-color: #242424;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Black bold subheadings */
 .content-card h2 {
-    color: #000;        /* black text */
-    font-weight: bold;  /* bold */
+    color: #e0e0e0;
+    font-weight: bold;
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-/* Text styling inside card */
 .content-card p,
 .content-card ul {
-    color: #333;
+    color: #aaa;
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 15px;
 }
 
-/* Bullet list styling */
 .content-card ul {
     margin-left: 20px;
     padding-left: 0;
     list-style-type: disc;
 }
 
-/* =============================================
-   ADD THESE STYLES TO THE BOTTOM OF style.css
-   ============================================= */
-
 /* Section Navigation Cards (index.html) */
 .section-nav {
     padding: 40px 20px 20px;
-    background-color: #f0f0f0;
+    background-color: #1a1a1a;
 }
 
 .section-nav-grid {
@@ -373,18 +377,18 @@ footer .social-links a:hover {
 
 .section-nav-card {
     display: block;
-    background-color: #fff;
+    background-color: #242424;
     border-radius: 8px;
     padding: 30px 25px;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     transition: box-shadow 0.3s, transform 0.2s;
     border-top: 3px solid transparent;
 }
 
 .section-nav-card:hover {
-    box-shadow: 0 6px 16px rgba(0,0,0,0.13);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
     transform: translateY(-3px);
     border-top-color: #007bff;
 }
@@ -397,13 +401,13 @@ footer .social-links a:hover {
 .section-nav-card h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #111;
+    color: #e0e0e0;
     margin-bottom: 10px;
 }
 
 .section-nav-card p {
     font-size: 14px;
-    color: #666;
+    color: #888;
     line-height: 1.6;
     margin-bottom: 18px;
 }
@@ -418,10 +422,10 @@ footer .social-links a:hover {
 .section-heading {
     font-size: 22px;
     font-weight: 700;
-    color: #111;
+    color: #e0e0e0;
     margin-bottom: 24px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid #2e2e2e;
 }
 
 /* Page Hero (for reflections/writeups/knowledge pages) */
@@ -467,28 +471,28 @@ footer .social-links a:hover {
 }
 
 .post-category--reflection {
-    background-color: #e8f4fd;
-    color: #0077cc;
+    background-color: #0d2d45;
+    color: #4da8e8;
 }
 
 .post-category--writeup {
-    background-color: #e6faf0;
-    color: #1a7a4a;
+    background-color: #0d2d1e;
+    color: #3ecf7e;
 }
 
 .post-category--book {
-    background-color: #fff4e0;
-    color: #b36000;
+    background-color: #2d1f00;
+    color: #e8a020;
 }
 
 .post-category--course {
-    background-color: #f0eaff;
-    color: #6632cc;
+    background-color: #1e1030;
+    color: #a070f0;
 }
 
 .post-category--knowledge {
-    background-color: #f5f5f5;
-    color: #555;
+    background-color: #2a2a2a;
+    color: #aaa;
 }
 
 /* Meta row inside post cards */
@@ -515,9 +519,9 @@ footer .social-links a:hover {
     letter-spacing: 0.04em;
 }
 
-.difficulty-badge--easy   { background-color: #d4edda; color: #155724; }
-.difficulty-badge--medium { background-color: #fff3cd; color: #856404; }
-.difficulty-badge--hard   { background-color: #f8d7da; color: #721c24; }
+.difficulty-badge--easy   { background-color: #0d2d1e; color: #3ecf7e; }
+.difficulty-badge--medium { background-color: #2d2000; color: #e8a020; }
+.difficulty-badge--hard   { background-color: #2d0d0d; color: #e85050; }
 
 /* Status badge (knowledge) */
 .status-badge {
@@ -529,21 +533,21 @@ footer .social-links a:hover {
     letter-spacing: 0.04em;
 }
 
-.status-badge--completed    { background-color: #d4edda; color: #155724; }
-.status-badge--in-progress  { background-color: #fff3cd; color: #856404; }
-.status-badge--up-next      { background-color: #e2e3e5; color: #383d41; }
+.status-badge--completed    { background-color: #0d2d1e; color: #3ecf7e; }
+.status-badge--in-progress  { background-color: #2d2000; color: #e8a020; }
+.status-badge--up-next      { background-color: #2a2a2a; color: #aaa; }
 
 /* Platform and author lines */
 .writeup-platform,
 .resource-author {
     font-size: 13px;
-    color: #888;
+    color: #777;
     margin-bottom: 10px;
 }
 
 .writeup-platform strong,
 .resource-author {
-    color: #555;
+    color: #999;
 }
 
 /* Empty state cards */
@@ -558,11 +562,12 @@ footer .social-links a:hover {
 }
 
 .empty-state h2 {
-    color: #555;
+    color: #777;
 }
 
 .empty-state code {
-    background-color: #f0f0f0;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
     padding: 2px 6px;
     border-radius: 3px;
     font-family: 'Courier New', monospace;
@@ -571,7 +576,7 @@ footer .social-links a:hover {
 
 /* Coming soon state */
 .coming-soon {
-    color: #aaa;
+    color: #555;
     font-size: 14px;
     font-style: italic;
     cursor: default;
@@ -589,8 +594,8 @@ footer .social-links a:hover {
     width: 700px;
     margin: 20px auto;
     border-radius: 6px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 /* Image captions — the italic lines under images */
@@ -599,11 +604,35 @@ footer .social-links a:hover {
     display: block;
     text-align: center;
     font-size: 13px;
-    color: #999;
+    color: #666;
     font-style: italic;
     margin-top: -12px;
     margin-bottom: 20px;
 }
 
-/* Update nav in _layouts/default.html to include new links */
-/* (see note below) */
+/* Table styling for dark theme */
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.post-content th {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #2e2e2e;
+    font-weight: 600;
+}
+
+.post-content td {
+    padding: 10px 14px;
+    border: 1px solid #2e2e2e;
+    color: #bbb;
+}
+
+.post-content tr:nth-child(even) td {
+    background-color: #1e1e1e;
+}
