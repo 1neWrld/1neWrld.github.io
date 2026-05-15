@@ -126,7 +126,7 @@ Nothing could be extracted from the `alice_door.jpg`. Though a `hint.txt` file w
 cat hint.txt
 follow the r a b b i t 
 ```
-Need less to say — the information wasn't as useful! 
+Needless to say — the information wasn't as useful! 
 
 Analysing the two other directories I previously enumerated, `/r & /poem`. The `/poem` directory had nothing of importance, though the `/r` directory:   
 
@@ -136,7 +136,7 @@ Analysing the two other directories I previously enumerated, `/r & /poem`. The `
 
 the `hint.txt` has the word 'rabbit' spaced out, and the current directory is the first letter of the word. Traversing through all the directories named after each letter, of the word 'rabbit'. (The hint was useful after all XD!)
 
-![Vieing the http://<TARGET_IP>/r/a/b/b/i/t/ web-page](/assets/images/writeups/wonderland/rabbit-traversal.png)
+![Viewing the http://<TARGET_IP>/r/a/b/b/i/t/ web-page](/assets/images/writeups/wonderland/rabbit-traversal.png)
  
  *View the title*
 
@@ -178,7 +178,7 @@ Matching Defaults entries for alice on wonderland:
     env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
 User alice may run the following commands on wonderland:
-    (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
+    (rabbit) NOPASSWD: /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
 ```
 
 Alice can run a specific Python script as **rabbit** without a password.
@@ -257,7 +257,7 @@ Transferred the file to Kali for analysis:
 strings teaParty | awk 'length($0) > 10'
 ```
 
-The `strings` command extracts human-readable text ironed into the binary during compilation. Filtering with `awk 'length($0) > 10'` removes short noise strings, leaving only meaningful output bigger than 10 characters.
+The `strings` command extracts human-readable text embedded into the binary during compilation. Filtering with `awk 'length($0) > 10'` removes short noise strings, leaving only meaningful output bigger than 10 characters.
 
 The key line found:
 
@@ -343,7 +343,7 @@ getcap -r / 2>/dev/null
   
   *Checked GTFOBins under the **Capabilities** section for perl*
 
-GTFOBins contains lists of Unnix executables, to assist in bypassing security mechanisms in incorrectly setup systems.  
+GTFOBins contains lists of Unix executables, to assist in bypassing security mechanisms in incorrectly setup systems.  
 
 ```bash
 perl -e 'use POSIX qw(setuid); POSIX::setuid(0); exec "/bin/sh"'
