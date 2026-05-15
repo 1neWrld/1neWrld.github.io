@@ -5,7 +5,7 @@ layout: default
 <article class="post">
     <div class="container">
         <div class="post-header">
-            <h1>{{ page.title }}</h1>
+            <h1>{% if page.room_url %}<a href="{{ page.room_url }}">{{ page.title }}</a>{% else %}{{ page.title }}{% endif %}</h1>
             <p class="post-meta">
                 Posted on {{ page.date | date: "%B %d, %Y" }}
                 {% if page.author %} by {{ page.author }}{% endif %}
