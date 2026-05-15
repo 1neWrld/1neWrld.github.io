@@ -2,6 +2,7 @@
 layout: post
 title: "TryHackMe — Break-Out-The-Cage"
 date: 2026-05-13
+room_url: "https://tryhackme.com/room/breakoutthecage1"
 category: writeup
 platform: TryHackMe
 difficulty: Easy
