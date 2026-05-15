@@ -2,6 +2,7 @@
 layout: post
 title: "TryHackMe — Wonderland"
 date: 2026-05-15
+room_url: "https://tryhackme.com/room/wonderland"
 category: writeup
 platform: TryHackMe
 difficulty: Medium
