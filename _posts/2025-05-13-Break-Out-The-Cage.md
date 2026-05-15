@@ -4,7 +4,7 @@ title: "TryHackMe — Break-Out-The-Cage"
 date: 2026-05-13
 category: writeup
 platform: TryHackMe
-difficulty: Medium
+difficulty: easy
 tags:
   - FTP
   - Steganography
