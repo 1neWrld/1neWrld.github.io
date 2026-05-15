@@ -396,7 +396,6 @@ cat /home/alice/root.txt
 - ffuf
 - steghide
 - strings / awk
-- checksec
 - getcap
 - GTFOBins
 - netcat
