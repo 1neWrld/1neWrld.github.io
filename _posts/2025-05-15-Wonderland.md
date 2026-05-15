@@ -119,9 +119,9 @@ steghide extract -sf white_rabbit_1.jpg
 Enter passphrase: 
 wrote extracted data to "hint.txt".
 ```
-  *Note the passphrase for both images is void, just press enter*
+  *Note, enter a blank passphrase for each image*
 
-Nothing could be extracted from the `alice_door.jpg`. Though a `hint.txt` file was extracted from the `white_rabbit_1.jpg`:
+Nothing could be extracted from the `alice_door.jpg` as a blank passphrase was rejected. Though a `hint.txt` file was extracted from the `white_rabbit_1.jpg`:
 
 ```bash
 cat hint.txt
@@ -212,7 +212,7 @@ The script imports the `random` module:
 import random
 ```
 
-Though since the random module doesn't have a definite path we can create our own random script for the system to use. As `walrus_and_the_carpenter.py` resides in the same directory as our `random.py` payload. The system will first look in the directory the `.py` script resides, before checking the `PATH` variable. 
+Though since the random module doesn't have a definite path we can create our own random script for the system to use. As `walrus_and_the_carpenter.py` resides in the same directory as our `random.py` payload. Python begins searching for the module in the current working directory, before checking the `PATH` variable. 
 
 **The exploit — create a fake `random.py` module in /tmp!**
 
