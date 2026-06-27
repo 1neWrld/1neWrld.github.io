@@ -114,7 +114,7 @@ SELECT * FROM users WHERE username='' OR 1=1--' AND password='...'
 
 ![Dashboard showing the internal system](/assets/images/writeups/silent-monitor/dashboard.png)
   
-  *Inpsect Internals page once you bypass the sign-in via sqli * 
+  *Inpsect Internals page once you bypass the sign-in via sqli* 
 
 The dashboard revealed a live infrastructure overview — 12 hosts online, service statuses, network segments, and an audit log. The audit log immediately caught my attention:
 
@@ -361,7 +361,7 @@ su root
 
 ![Root shell accessed](/assets/images/writeups/silent-monitor/root.png)
  
-  *Enter root's password from the KeePass database.*
+  *Enter root's password from the KeePass database*
 
 
 The final flag reside within root:
